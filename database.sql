@@ -1,7 +1,7 @@
 /*Creacion de la base de datos*/
 CREATE DATABASE simplecrud;
 
-/*Creacion de la tabla para usuarios*/
+/*Creacion de la tabla para projects*/
 CREATE TABLE projects(
     id SERIAL PRIMARY KEY, 
     title VARCHAR(30),
@@ -9,7 +9,7 @@ CREATE TABLE projects(
     date DATE NOT NULL DEFAULT CURRENT_DATE
 );
 
-/*Insertando valores en la tabla users*/
+/*Insertando valores en la tabla projects*/
 INSERT INTO projects (title, description) VALUES
     ('test1', 'desc test 1'),
     ('test2', 'desc test 2');
